@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le guide du CFO · Livre ouvert</title>
+<link rel="stylesheet" href="./livre-ouvert.css?v=flat-1">
+<script type="module" src="./model-viewer.min.js"></script>
+<script type="module" src="./livre-ouvert.js?v=flat-1"></script>
+</head>
+<body>
+<model-viewer id="livre" src="./livre-ouvert.glb" alt="Livre ouvert : chapitre 1. Faites glisser pour le tourner."
+ camera-controls disable-zoom disable-pan touch-action="pan-y" camera-orbit="-8deg 65deg 80%"
+ min-camera-orbit="auto 20deg auto" max-camera-orbit="auto 160deg auto"
+ field-of-view="30deg" shadow-intensity="0" exposure="1" interaction-prompt="none" loading="eager">
+ <span slot="progress-bar" hidden></span>
+</model-viewer>
+<p id="etat" role="status" aria-live="polite">Ouverture du livre…</p>
+</body>
+</html>
