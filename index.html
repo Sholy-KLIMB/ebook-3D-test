@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le guide du CFO : livre 3D</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent}
+model-viewer{display:block;width:100%;height:100%;background:transparent;--poster-color:transparent;--progress-bar-height:0}
+</style>
+<script type="module" src="./model-viewer.min.js"></script>
+</head>
+<body>
+<model-viewer src="./livre.glb?v=20260924-fin" alt="Le guide du CFO. Faites glisser pour tourner le livre."
+ camera-controls disable-zoom disable-pan touch-action="pan-y" camera-orbit="65deg 68deg 0.8m"
+ min-camera-orbit="auto 15deg 0.38m" max-camera-orbit="auto 165deg 1m"
+ field-of-view="30deg" shadow-intensity="0.6" exposure="1"
+ interaction-prompt="none" loading="eager">
+ <span slot="progress-bar" hidden></span>
+</model-viewer>
+</body>
+</html>
