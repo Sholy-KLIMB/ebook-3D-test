@@ -32,7 +32,7 @@ openReady.catch(()=>{});
 function fit(){
   if(running)return;
   const orbit=opened.loaded?opened.getCameraOrbit():null;
-  opened.setAttribute('camera-orbit',`${orbit?orbit.theta*180/Math.PI:-8}deg ${orbit?orbit.phi*180/Math.PI:65}deg ${narrow.matches?'100%':'80%'}`);
+  opened.setAttribute('camera-orbit',`${orbit?orbit.theta*180/Math.PI:20}deg ${orbit?orbit.phi*180/Math.PI:85}deg ${narrow.matches?'100%':'80%'}`);
 }
 fit();narrow.addEventListener('change',fit);
 function visibility(viewer,shown){
